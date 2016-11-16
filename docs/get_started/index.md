@@ -1,19 +1,73 @@
-# Getting Started
+# MXNet: A Scalable Deep Learning Framework
+MXNet is an open-source deep learning framework that allows you to define, train, and deploy deep neural networks on a wide array of devices, from cloud infrastructure to mobile devices. 
+It is highly scalable, allowing for fast model training, and supports a flexible programming model and multiple languages. MXNet allows you to mix symbolic and imperative programming flavors to maximize both efficiency and productivity. 
+MXNet is built on a dynamic dependency scheduler that automatically parallelizes both symbolic and imperative operations on the fly. 
+A graph optimization layer on top of that makes symbolic execution fast and memory efficient. The MXNet library is portable and lightweight, and it scales to multiple GPUs and multiple machines.
 
-This is a getting started tutorial of MXNet.
-We will train a
-[multi-layer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-(MLP) on
-the [MNIST handwritten digit dataset](http://yann.lecun.com/exdb/mnist/) to get
+
+&nbsp;
+
+**Flexible Programming Model**
+Supports both imperative and symbolic programming, maximizing efficiency and productivity
+
+
+&nbsp;
+
+**Portable from the Cloud to the Client**
+Runs on CPUs or GPUs, and on clusters, servers, desktops, or mobile phones
+
+
+&nbsp;
+
+**Multi-Lingual**
+Supports over seven programming languages, including C++, Python, R, Scala, Julia, Matlab, and Javascript
+
+
+&nbsp;
+
+**Native Distributed Training**
+Supports distributed training on multiple CPU/GPU machines to take advantage of cloud scale 
+
+
+&nbsp;
+
+**Performance Optimized** 
+Parallelizes both I/O and computation with an optimized C++ backend engine, and performs optimally no matter which language you program in
+
+
+&nbsp;
+
+# MXNet Open Source Community 
+
+**Broad Model Support** – Train and deploy the latest deep convolutional neural networks (CNNs) and long short-term memory (LSTMs) models 
+
+
+&nbsp;
+
+**Extensive Library of Reference Examples** – Build on sample tutorials (with code), such as image classification, language modeling, neural Artart, and Speech speech recognition, and more.  
+
+
+&nbsp;
+
+**Open and Collaborative Community** – Support and contributions from many top tier universities and industry partners
+
+
+&nbsp;
+
+Refer [Setup and Installation](http://mxnet.io/get_started/setup.html) guide to set up and start using MXNet.
+
+
+&nbsp;
+
+
+&nbsp;
+
+Before we get started with MXNet, let's see how a MXNet programming interface would look like. First, we should MXNet program for training a basic digit recognition model and then we will also see the MXNet interface for tensor computation.
+
+# First MXNet Model - Train an MLP on MNIST
+ 
+We will train a [multi-layer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)(MLP) on the [MNIST handwritten digit dataset](http://yann.lecun.com/exdb/mnist/) to get
 the basic idea of how to use MXNet.
-
-## Links to Other Resources
-Here are some other resources that can also be helpful
-- See [Installation Guide](../how_to/build.md) on how to install mxnet.
-- See [How to pages](../how_to/index.md) on various tips on using mxnet.
-- See [Tutorials](../tutorials/index.md) on tutorials on specific tasks.
-
-## Train MLP on MNIST
 
 On MNIST, each example consists of a 28 x 28 gray image of a handwritten digit
 such as
@@ -57,7 +111,7 @@ training data.
 In the following section we will show how to implement the training program
 using different languages in MXNet.
 
-### Python
+## Python
 
 We first import MXNet
 ```python
@@ -100,7 +154,7 @@ test = mx.io.MNISTIter(...)
 model.predict(X = test)
 ```
 
-### R
+## R
 
 First we `require` the `mxnet` package
 
@@ -166,7 +220,7 @@ test <- mx.io.MNISTIter(...)
 preds <- predict(model, test)
 ```
 
-### Scala
+## Scala
 
 We first import MXNet
 
@@ -236,7 +290,7 @@ val py = NDArray.argmaxChannel(prob)
 // deal with predicted labels 'py'
 ```
 
-### Julia
+## Julia
 
 We first import MXNet
 
@@ -275,16 +329,16 @@ and finally predict by
 probs = mx.predict(model, test_provider)
 ```
 
-## Tensor Computation
+# Tensor Computation
 
 Next we briefly introduce the tensor computation interface, which is often more
-flexiable to use than the previous symbolic interface. It is often used to
+flexible to use than the previous symbolic interface. It is often used to
 implement the layers, define weight updating rules, and debug.
 
 
-### Python
+## Python
 
-The python inferface is similar to `numpy.NDArray`.
+The python interface is similar to `numpy.NDArray`.
 
 ```python
 >>> import mxnet as mx
@@ -295,7 +349,7 @@ The python inferface is similar to `numpy.NDArray`.
  [ 2.  2.  2.]]
 ```
 
-### R
+## R
 
 ```r
 > require(mxnet)
@@ -311,7 +365,7 @@ Loading required package: mxnet
 [2,]    2    2    2
 ```
 
-### Scala
+## Scala
 
 You can do tensor/matrix computation in pure Scala.
 
@@ -332,4 +386,8 @@ scala> (arr * 2).shape
 res3: ml.dmlc.mxnet.Shape = (2,3)
 ```
 
-### Julia
+# Recommended Next Steps
+* [Setup and Installation](http://mxnet.io/get_started/setup.html)
+* [Tutorials](http://mxnet.io/tutorials/index.html)
+* [How To](http://mxnet.io/how_to/index.html)
+* [Architecture](http://mxnet.io/architecture/index.html)

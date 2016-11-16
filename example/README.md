@@ -27,8 +27,8 @@ If you want to contribute to this list and the examples, please open a new pull 
 ###<a name="language-binding-examples"></a>Languages Binding Examples
 ------------------
 * [C++ examples](https://github.com/dmlc/mxnet/tree/master/example/cpp) - Example code for using C++ interface, including NDArray, symbolic layer and models.
-* [MXNet Python](http://mxnet.readthedocs.io/en/latest/packages/python/index.html) - Python library
-* [MXNetR](http://mxnet.readthedocs.io/en/latest/packages/r/index.html) - R library
+* [MXNet Python](http://mxnet.readthedocs.io/en/latest/api/python/index.html) - Python library
+* [MXNetR](http://mxnet.readthedocs.io/en/latest/api/r/index.html) - R library
 * [MXNet.jl](http://mxnetjl.readthedocs.org/en/latest/) - Julia library
 * [gomxnet](https://github.com/jdeng/gomxnet) - Go binding
 * [MXNet JNI](https://github.com/dmlc/mxnet/tree/master/amalgamation/jni) - JNI(Android) library
@@ -43,12 +43,14 @@ If you want to contribute to this list and the examples, please open a new pull 
 * [Numpy Operator Customization](https://github.com/dmlc/mxnet/tree/master/example/numpy-ops) - Example on quick customize new ops with numpy.
 * [Adversary Sample Generation](adversary) - Find adversary sample by using fast sign method.
 * [Neural Art](neural-style) -  Generate artistic style images.
+* [DQN and Double DQN](https://github.com/dmlc/mxnet/tree/master/example/dqn) -  Examples of training DQN and Double DQN to play Atari Games.
 * [Kaggle 1st national data science bowl](https://github.com/dmlc/mxnet/tree/master/example/kaggle-ndsb1) - a MXnet example for Kaggle Nation Data Science Bowl 1
 * [Kaggle 2nd national data science bowl](https://github.com/dmlc/mxnet/tree/master/example/kaggle-ndsb2) - a tutorial for Kaggle Second Nation Data Science Bowl
 * [CNN for Text Classification](cnn_text_classification) - a MXnet example for text classification
-* [Chinese plate recognition](https://github.com/imistyrain/mxnet-mr) - Recognize Chinese vehicle plate, by [liuruoze](https://github.com/liuruoze)
+* [Chinese plate recognition](https://github.com/imistyrain/mxnet-mr) - Recognize Chinese vehicle plate, by [imistyrain](https://github.com/imistyrain)
 * [Fast R-CNN](https://github.com/precedenceguo/mx-rcnn) by [Jian Guo](https://github.com/precedenceguo)
 * "End2End Captcha Recognition (OCR)" by [xlvector](https://github.com/xlvector) [github link](https://github.com/xlvector/learning-dl/tree/master/mxnet/ocr) [Blog in Chinese](http://blog.xlvector.net/2016-05/mxnet-ocr-cnn/)
+* "Prediction step of xlvector's lstm ocr" by [melody-rain](https://github.com/melody-rain) [github link](https://github.com/melody-rain/mxnet/commit/46002e31fc34c746c01bcaa7ade999187068ad3c) [Blog in Chinese](https://zhuanlan.zhihu.com/p/22698511)
 * "Solving classificiation + regression with MXnet in Multi Input + Multi Obj" by [xlvector](https://github.com/xlvector) [github link](https://gist.github.com/xlvector/c304d74f9dd6a3b68a3387985482baac) [Blog in Chinese](http://blog.xlvector.net/2016-05/mxnet-regression-classification-for-concret-continuous-features/)
 * "Learn to sort by LSTM" by [xlvector](https://github.com/xlvector) [github link](https://github.com/xlvector/learning-dl/tree/master/mxnet/lstm_sort) [Blog in Chinese](http://blog.xlvector.net/2016-05/mxnet-lstm-example/)
 * [Neural Art using extremely lightweight (<500K) neural network](https://github.com/pavelgonchar/neural-art-mini) Lightweight version of mxnet neural art implementation by [Pavel Gonchar](https://github.com/pavelgonchar)
@@ -63,6 +65,13 @@ If you want to contribute to this list and the examples, please open a new pull 
 * [Matrix decomposition (SVD) with MXNet](http://www.jianshu.com/p/ebf7bf53ed3e) by xlvector in Chinese. Github [link](https://github.com/xlvector/mxnet/blob/svd/example/svd/svd.py)
 * [MultiGPU enabled image generative models (GAN and DCGAN)](https://github.com/tqchen/mxnet-gan) by [Tianqi Chen](https://github.com/tqchen)
 * [Baidu Warp CTC with Mxnet](https://github.com/dmlc/mxnet/tree/master/example/warpctc) by xlvector
+* [Deep reinforcement learning for playing flappybird by mxnet](https://github.com/li-haoran/DRL-FlappyBird) by LIHaoran
+* [Neural Style in Markov Random Field (MRF) and Perceptual Losses Realtime transfer](https://github.com/zhaw/neural_style) by [zhaw](https://github.com/zhaw)
+* [MTCNN Face keypoints detection and alignment](https://pangyupo.github.io/2016/10/22/mxnet-mtcnn/) ([github](https://github.com/pangyupo/mxnet_mtcnn_face_detection)) in Chinese by [pangyupo](https://github.com/pangyupo)
+* [SSD: Single Shot MultiBox Object Detector](https://github.com/zhreshold/mxnet-ssd) by [zhreshold](https://github.com/zhreshold)
+* [Fast Neural Style in Scala](https://github.com/Ldpe2G/DeepLearningForFun/tree/master/Mxnet-Scala/FastNeuralStyle) by [Ldpe2G](https://github.com/Ldpe2G)
+* [LSTM Human Activity Recognition](https://github.com/Ldpe2G/DeepLearningForFun/tree/master/Mxnet-Scala/HumanActivityRecognition) by [Ldpe2G](https://github.com/Ldpe2G)
+* [Visual Question Answering](https://github.com/liuzhi136/Visual-Question-Answering) by [liuzhi136](https://github.com/liuzhi136)
 
 ###<a name="ipython-notebooks"></a>IPython Notebooks
 -----------------
@@ -72,6 +81,8 @@ If you want to contribute to this list and the examples, please open a new pull 
 * [cifar-100](notebooks/cifar-100.ipynb) - A demo of how to train a 75.68% accuracy CIFAR-100 model
 * [simple bind](notebooks/simple_bind.ipynb) - A demo of low level training API.
 * [Multi task tutorial](https://github.com/haria/mxnet-multi-task-example/blob/master/multi-task.ipynb) - A demo of how to train and predict multi-task network on both MNIST and your own dataset.
+* [class active maps](https://github.com/dmlc/mxnet/blob/master/example/notebooks/class_active_maps.ipynb) - A demo of how to localize the discriminative regions in an image using global average pooling (GAP) in CNNs.
+* [DMLC MXNet Notebooks](https://github.com/dmlc/mxnet-notebooks) DMLC's repo for various notebooks ranging from basic usages of MXNet to state-of-the-art deep learning applications.
 
 ###<a name="mobile-apps-examples"></a>Mobile App Examples
 -------------------
@@ -101,6 +112,8 @@ If you want to contribute to this list and the examples, please open a new pull 
 * [Setup Amazon AWS GPU instance with MXnet](https://no2147483647.wordpress.com/2016/01/16/setup-amazon-aws-gpu-instance-with-mxnet/) - AWS GPU instance setup with GPU (CUDA with latest cuDNN and S3 support)
 * [Intro Guide to AWS (MXNet with Julia)](http://www.datasciencebowl.com/aws_guide/) - A step-by-step guide of using spot instances with Amazon Web Services (AWS) to help you save money when training DSB models on MXNet by [Mike Kim](http://www.datasciencebowl.com/author/mikekim/)
 * [Building Deep Neural Networks in the Cloud with Azure GPU VMs, MXNet and Microsoft R Server](https://blogs.technet.microsoft.com/machinelearning/2016/09/15/building-deep-neural-networks-in-the-cloud-with-azure-gpu-vms-mxnet-and-microsoft-r-server/) by [Cortana Intelligence and ML Blog Team](https://social.technet.microsoft.com/profile/Cortana+Intelligence+and+ML+Blog+Team) at Microsoft
+* [Applying Deep Learning at Cloud Scale, with Microsoft R Server & Azure Data Lake](https://blogs.technet.microsoft.com/machinelearning/2016/10/31/applying-cloud-deep-learning-at-scale-with-microsoft-r-server-azure-data-lake/) by [Cortana Intelligence and ML Blog Team](https://social.technet.microsoft.com/profile/Cortana+Intelligence+and+ML+Blog+Team) at Microsoft
+* [Distributed Deep Learning Made Easy](https://aws.amazon.com/blogs/compute/distributed-deep-learning-made-easy/) at AWS/Amazon for deploying deep learning clusters using MXNet
 
 ### <a name="kaggle-tutorials"></a>Kaggle tutorials
 * [Kaggle 2nd Annual Data Science Bowl End-to-End Deep Learning Tutorial (Python)](https://www.kaggle.com/c/second-annual-data-science-bowl/forums/t/18079/end-to-end-deep-learning-tutorial-0-0392) - an end-to-end python tutorial for Kaggle heart disease diagnose competition (public leaderboard score 0.0392)
